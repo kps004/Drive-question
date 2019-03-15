@@ -18,7 +18,7 @@ int main()
     min=32456;
     for(i=0;i<n;i++)
     {
-          min=32456;
+          min=a[i];
           p=-1;
         for(j=i;j<n;j++)
         {
