@@ -1,0 +1,31 @@
+///.................................. to get input as integers without array  length'''''''''''''''''''''''''''''''''''''
+
+                 
+
+#include <stdio.h>
+
+int main()
+{
+    int i=0,j,k,l,num[20];
+    char str[100];
+    scanf("%[^\n]",str);
+    for(l=0;str[l]!='\0';l++)
+    {
+        if((str[l]>=48)&&(str[l]<=57))
+        {
+            num[i]= str[l]-48;
+            i++;
+        }
+    }
+    j=0;
+    while(j<i)
+    {
+        printf("%d ",num[j]);
+        j++;
+    }
+    
+    
+    
+    
+    return 0;
+}
