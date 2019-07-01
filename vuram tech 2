@@ -1,0 +1,35 @@
+///////////////////////''''''' in a array difference of given num pair count should be displayed '''///////////////////////////////////////
+
+#include <stdio.h>
+
+int main()
+{
+    int i=0,j,t,p=0,l,num[20],q=0,n;
+    char str[100];
+    scanf("%d %d",&n,&q);
+    for(l=0;l<n;l++)
+    {
+     scanf("%d",&num[l]);
+    }
+    
+    for(l=0;l<n;l++)
+    {
+      for(j=l+1;j<n-1;j++)
+      {
+          t=num[j]-num[l];
+          
+          if(t<0)
+          {
+              t=t*-1;
+          }
+          if(t==q)
+          {
+              p++;
+          }
+      }
+        
+    }
+    
+    printf("p=%d",p);
+    return 0;
+}
